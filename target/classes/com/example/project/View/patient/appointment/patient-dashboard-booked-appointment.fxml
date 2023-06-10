@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="1001.0" stylesheets="@../../../../../../../css/dashboard1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Controller.Patient.PatientDashBoardBookedAppointmentController">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="sideBar" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="103.0" fitWidth="144.0" layoutX="35.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../../css/user (2).png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="62.0" layoutY="124.0" styleClass="Welcome" text="Welcome" />
+                <Label layoutX="69.0" layoutY="142.0" styleClass="Welcome" />
+                <Separator layoutY="180.0" prefHeight="0.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" />
+                <Button layoutX="1.0" layoutY="201.0" mnemonicParsing="false" onAction="#goToAppointment" prefHeight="26.0" prefWidth="204.0" styleClass="link" text="Appointments" />
+                <Button layoutX="-1.0" layoutY="242.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="204.0" style="-fx-background-color: blue;" styleClass="link" text="BookedAppointment" />
+                <Button layoutY="289.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="201.0" styleClass="link" text="Logout" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="522.0" prefWidth="802.0" styleClass="content" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="33.0" layoutY="14.0" styleClass="title" text="Booked Appointments" />
+                <AnchorPane layoutX="17.0" layoutY="48.0" prefHeight="443.0" prefWidth="762.0" styleClass="mainContent">
+                    <children>
+                        <Button layoutX="50.0" layoutY="26.0" mnemonicParsing="false" onAction="#showAll" style="-fx-background-color: blue;" styleClass="button1" text="Show All" />
+                        <TableView fx:id="bAppTable" layoutX="13.0" layoutY="76.0" prefHeight="338.0" prefWidth="727.0">
+                            <columns>
+                                <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                                <TableColumn fx:id="aIdCol" prefWidth="85.0" text="Appo. ID" />
+                                <TableColumn fx:id="uIdCol" prefWidth="91.0" text="User ID" />
+                                <TableColumn fx:id="statusCol" prefWidth="113.0" text="Status" />
+                                <TableColumn fx:id="commentCol" prefWidth="362.0" text="Comment" />
+                            </columns>
+                        </TableView>
+                    </children></AnchorPane>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

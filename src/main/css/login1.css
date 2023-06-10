@@ -1,0 +1,26 @@
+.login-left{
+-fx-background-color:#0598ff;
+}
+.userIcon{
+-fx-text-fill:#0598ff;
+}
+.button{
+ -fx-background-color:#0598ff;
+ -fx-text-fill:white;
+ -fx-font-size:15;
+}
+.text-field,password-field{
+-fx-background-color:transparent;
+-fx-border-width:0px 0px 2px 0px;
+-fx-border-color:#0598ff;
+}
+.title{
+-fx-text-fill:#0598ff;
+-fx-font-weight:bold;
+-fx-font-size:15;
+}
+.title1{
+-fx-text-fill:white;
+-fx-font-size:20;
+-fx-font-style:italic;
+}
